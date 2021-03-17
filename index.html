@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Main Root -->
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Nhat Nguyen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 110 Lab</title>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+      window.TrackJS && TrackJS.install({ 
+        token: "7a754e10f20b45bd8bf1e486cbf14749",
+        application: "lab110"
+      });
+    </script>
+</head>
+
+<body>
+  <section id='errorChecking'>
+      <h4>Interested in becoming Gunners? Please enter your information below:</h4>
+      <label for="firstName">First name:</label><br>
+      <input type="text" id="firstName" name="firstName"><br>
+      <label for="lastName">Last name:</label><br>
+      <input type="text" id="lastName" name="lastName"><br>
+      <input type="submit" id='submit' value="Submit">
+      <!-- Log -->
+      <input type="submit" id='logSubmit' value="Console.Log">
+      <!-- Error -->
+      <input type="submit" id='errSubmit' value="Console.Error">
+      <!-- Table -->
+      <input type="submit" id='tableSubmit' value="Console.Table">
+      <!-- Dir -->
+      <input type="submit" id='dirSubmit' value="Console.Dir">
+      <!-- DirXML  -->
+      <input type="submit" id='dirXMLSubmit' value="Console.DirXML">
+      <!-- Group -->
+      <input type="submit" id='grpStartSubmit' value="Console.GroupStart">
+      <input type="submit" id='grpEndSubmit' value="Console.GroupEnd">
+      <!-- Time -->
+      <input type="submit" id='timeSubmit' value="Console.Time">
+      <!-- End Time -->
+      <input type="submit" id='endTimeSubmit' value="Console.TimeEnd">
+      <!-- Trace -->
+      <input type="submit" id='traceSubmit' value="Console.Trace">
+      <input type="submit" id="globalChecker" value="globalChecker">
+  </section>
+  <p>Result:</p>
+  <p id='result'></p>
+  <script src="index.js"></script>
+</body>
+</html>
